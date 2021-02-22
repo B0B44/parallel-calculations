@@ -65,7 +65,7 @@ double run(int n, int threads, bool output)
 
 double avrg(int runs, int i, int j){
 	double results = 0;
-	for(int x = 0; x < 10; x++){
+	for(int x = 0; x < runs; x++){
 		results += run(i, j, false);
 	}
 	return results / runs;
